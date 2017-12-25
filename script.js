@@ -7,11 +7,13 @@ var Main = {
   
     if (that.templates[input.url]) {
       var html = that.templates[input.url];
-      for (var key in input.data[key] ){
-        var delimeter = '{{' + key + '}}';
-        console.log(html, delimeter);
-        if (html.indexOf(delimeter) !== -1) {
-          html = html.split(delimeter).join(input.data[key]);
+      if (input.data) {
+        for (var key in input.data){
+          var delimeter = '{{' + key + '}}';
+          console.log(html, delimeter);
+          if (html.indexOf(delimeter) !== -1) {
+            html = html.split(delimeter).join(input.data[key]);
+          }
         }
       }
       
