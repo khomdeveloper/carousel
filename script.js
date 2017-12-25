@@ -5,8 +5,8 @@ var Main = {
     
     var that = this;
   
-    if (templates[input.url]) {
-      var html = templates[input.url];
+    if (that.templates[input.url]) {
+      var html = that.templates[input.url];
       for (var key in input.data[key] ){
         var delimeter = '{{' + key + '}}';
         if (html.indexOf(delimeter) !== -1) {
