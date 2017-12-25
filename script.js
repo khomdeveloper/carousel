@@ -10,7 +10,7 @@ var Main = {
       for (var key in input.data[key] ){
         var delimeter = '{{' + key + '}}';
         if (html.indexOf(delimeter) !== -1) {
-          html.split(delimeter).join(input.data[key]);
+          html = html.split(delimeter).join(input.data[key]);
         }
       }
       
