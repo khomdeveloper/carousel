@@ -20,7 +20,7 @@ var Main = {
       return html;
     } else {
       $.get({
-        url : url,
+        url : input.url,
         success: function(response){
           console.log(response);
           //that.loadTemplate(input); 
