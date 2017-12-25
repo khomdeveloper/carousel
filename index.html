@@ -12,7 +12,12 @@
     <div class="list_slider"></div>
     <script type="text/javascript">
       $(document).ready(function(){
-         
+         Main.loadTemplate({
+            url : '/card.tpl',
+            data : {
+              description : 'test'
+            }
+         });
       });
     </script>
   </body>
