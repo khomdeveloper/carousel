@@ -23,7 +23,7 @@ var Main = {
         url : url,
         success: function(response){
           console.log(response);
-          //that.loadTemplate(input);
+          //that.loadTemplate(input); 
         }
       });
       return false;
