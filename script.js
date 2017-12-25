@@ -9,6 +9,7 @@ var Main = {
       var html = that.templates[input.url];
       for (var key in input.data[key] ){
         var delimeter = '{{' + key + '}}';
+        console.log(html, delimeter);
         if (html.indexOf(delimeter) !== -1) {
           html = html.split(delimeter).join(input.data[key]);
         }
