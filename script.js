@@ -16,17 +16,21 @@ var Main = {
       
       if (input.callback) {
         input.callback(html);
+      } else if (input.append){
+          input.append.append(html); 
+      } else if (input.html) { 
+          input.html.html(html);
       }
       return html;
     } else {
       $.get({
-        url : url,
+        url : input.url,
         success: function(response){
-          console.log(response);
-          //that.loadTemplate(input); 
+          that.templates[input.url] = response;
+          that.loadTemplate(input); 
         }
       });
-      return false;
+      return false; 
     }
   }
 
