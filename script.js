@@ -16,6 +16,10 @@ var Main = {
       
       if (input.callback) {
         input.callback(html);
+      } else if (input.append){
+          input.append.append(html); 
+      } else if (input.html) { 
+          input.html.html(html);
       }
       return html;
     } else {
