@@ -26,7 +26,7 @@ var Main = {
           //that.loadTemplate(input); 
         }
       });
-      return false;
+      return false; 
     }
   }
 
