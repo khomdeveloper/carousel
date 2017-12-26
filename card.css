@@ -1,4 +1,6 @@
 .card{
   background:white;
   border:1px solid silver;
+  min-width:320px;
+  display:inline-block;
 }
