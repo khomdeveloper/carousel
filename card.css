@@ -12,18 +12,18 @@
 }
 
 .cardFooter .fa-heart{
-  font-size:0.7rem;
+  font-size:0.9rem;
   color:rgb(224,226,215);
 }
 
 .card .fa-circle{
   color:rgb(238,238,238);
-  font-size:0.9rem;
+  font-size:0.7rem;
 }
 
 .card .fa-star{
   color: rgb(240,182,76);
-  font-size:0.8rem;
+  font-size:0.9rem;
 }
 
 .card .scoreStatus {
