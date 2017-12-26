@@ -10,6 +10,7 @@ h1{
 }
 
 .list_host{
-  text-align:center;
+  width:auto;
+  margin:auto;
   font-size:0px;
 }
