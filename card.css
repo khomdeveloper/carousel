@@ -34,8 +34,8 @@
   height:auto;
   width:100%;
   clear:both;
-  padding-top:10px;
-  padding-bottom:10px;
+  padding-top:5px;
+  padding-bottom:5px;
 }
 
 .card .cardFooter{
@@ -58,4 +58,17 @@
   color: rgb();
   font-size:0.8rem; 
   color: rgb(187,187,187);
+}
+
+.card .score2{
+  margin-left:5px; 
+}
+
+.card .price_host{
+  float:right;
+  color: rgb(93,158,93);
+}
+
+.card .rubl{
+  font-family: 'Roboto'; 
 }
