@@ -40,6 +40,7 @@
 
 .card .cardFooter{
   border-top:1px solid rgb(233,233,233);
+  line-height:20px;
 }
 
 .card .userNameHost{
@@ -58,9 +59,6 @@
   color: rgb();
   font-size:0.8rem; 
   color: rgb(187,187,187);
-}
-
-.card .score2{
   margin-left:5px; 
 }
 
