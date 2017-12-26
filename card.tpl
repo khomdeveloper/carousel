@@ -1,5 +1,5 @@
 <div class="card id_{{id}}">
-  <div class="body">
+  <div class="card_body">
     <img src="{{image}}" alt="{{description}}"/>
     <div class="description">{{description}}</div>
     <div class="status">
