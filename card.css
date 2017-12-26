@@ -17,13 +17,13 @@
 .card .fa-circle{
   color:rgb(238,238,238);
   font-size:0.7rem;
-  margin-right:10px;
+  margin-right:5px;
 }
 
 .card .fa-star{
   color: rgb(240,182,76);
-  font-size:0.7rem;
-  margin-right:10px;
+  font-size:0.8rem;
+  margin-right:5px;
 }
 
 .card .scoreStatus {
@@ -45,5 +45,16 @@
 .card .userNameHost{
   font-size:0.8rem;
   font-weight:bold;
+  color: rgb(187,187,187);
+}
+
+.card .score1{
+  color:  rgb(240,182,76);
+  font-size:0.8rem;
+}
+
+.card .score2{
+  color: rgb();
+  font-size:0.8rem; 
   color: rgb(187,187,187);
 }
