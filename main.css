@@ -1,8 +1,10 @@
 body{
   background:rgb(230,230,230);
   font-size:1rem;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 h1{
   font-size:1.2rem;
+  text-align:center;
 }
