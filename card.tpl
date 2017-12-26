@@ -13,8 +13,8 @@
       </div>
     </div>
     <div class="cardFooter">
-      <i class="fa fa-heart" aria-hidden="true"></i>
       <div class="price_host">от <span class="price">{{price}}</span><span class="rubl">₽</span></div>
+      <i class="fa fa-heart" aria-hidden="true"></i> 
     </div>
   </div>
 </div>
