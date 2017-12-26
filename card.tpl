@@ -14,7 +14,7 @@
     </div>
     <div class="cardFooter">
       <i class="fa fa-heart" aria-hidden="true"></i>
-      <div class="price_host">от <span class="price">{{price}}</span></div>
+      <div class="price_host">от <span class="price">{{price}}</span><span class="rubl">&#8399;</span></div>
     </div>
   </div>
 </div>
