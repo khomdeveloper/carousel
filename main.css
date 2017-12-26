@@ -8,3 +8,8 @@ h1{
   font-size:1.2rem;
   text-align:center;
 }
+
+.list_host{
+  text-align:center;
+  font-size:0px;
+}
