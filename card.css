@@ -4,6 +4,7 @@
   width:218px;
   display:inline-block;
   margin:10px;
+  .text-align:left;
 }
 
 .card_body{
