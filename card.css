@@ -86,6 +86,7 @@
   overflow:hidden;
   text-overflow:ellipsis;
   height:50px;
+  margin-top:10px;
 }
 
 .card img{
