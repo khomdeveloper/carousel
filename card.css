@@ -10,7 +10,14 @@
   color:rgb(224,226,215);
 }
 
-.fa-sircle{
+.card .fa-circle{
   color:rgb(238,238,238);
   font-size:0.7rem;
+  float:left;
+}
+
+.card .fa-star{
+  color: rgb(240,182,76);
+ font-size:0.7rem;
+  float:left;
 }
