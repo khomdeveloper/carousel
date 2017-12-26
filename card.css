@@ -25,7 +25,9 @@
 }
 
 .card .scoreStatus {
-  float:right; 
+  display:inline-block;
+  float:left;
+  line-height:20px;
 }
 
 .card .status, .card .cardFooter{
@@ -44,6 +46,7 @@
   font-size:0.8rem;
   font-weight:bold;
   color: rgb(187,187,187);
+  line-height:20px;
 }
 
 .card .score1{
