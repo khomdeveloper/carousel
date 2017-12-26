@@ -1,6 +1,6 @@
 <div class="card id_{{id}}">
   <div class="card_body">
-    <img src="{{image}}" alt="{{description}}"/>
+    <img src="{{image}}"/>
     <div class="description">{{description}}</div>
     <div class="status">
       <div class="scoreStatus">
