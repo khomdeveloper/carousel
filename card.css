@@ -5,10 +5,15 @@
   display:inline-block;
   margin:10px;
   text-align:left;
+  cursor:pointer;
 }
 
-.card:hover{
+.card:hover, .card.active{
  border:1px solid blue; 
+}
+
+.card.active{
+ cursor:default; 
 }
 
 .card_body{
