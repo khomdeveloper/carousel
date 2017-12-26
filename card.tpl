@@ -5,7 +5,7 @@
     <div class="status">
       <div class="scoreStatus">
         <i class="fa fa-star" aria-hidden="true"></i>
-        <span class="score1">{{score1}}</span><span>{{score2}}</span>
+        <span class="score1">{{score1}}</span><span class="score2">({{score2}})</span>
       </div>
       <div class="userNameHost">
         <i class="fa fa-circle" aria-hidden="true"></i>
