@@ -9,14 +9,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   </head>
   <body>
-    <h1><i class="fa fa-square"></i> Список карточек</h1>
+    <h1>Список карточек</h1>
     <div class="list_host"></div>
-    <h1><i class="fa fa-square-o"></i> Слайдер карточек</h1>
+    <h1>Слайдер карточек</h1>
     <div class="list_slider"></div>
     <script type="text/javascript">
       $(document).ready(function(){
-        
-        
         for (var i=0; i<= Math.round(Math.random()*20); i++){
          Main.loadTemplate({
             url : '/carousel/card.tpl',
@@ -24,9 +22,7 @@
             append : $('.list_host')
          });
         }
-       
         List.init();
-        
       });
     </script>
   </body>
