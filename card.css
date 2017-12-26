@@ -73,7 +73,7 @@
 }
 
 .card .price{
- font-size:0.9rem; 
+ font-size:1rem; 
 }
 
 .card .rubl{
@@ -85,5 +85,5 @@
   font-size:0.9rem;
   overflow:hidden;
   text-overflow:ellipsis;
-  height:100px;
+  height:50px;
 }
