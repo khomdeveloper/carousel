@@ -16,9 +16,6 @@
     <script type="text/javascript">
       $(document).ready(function(){
         
-        Main.loadTemplate({
-            url : '/carousel/card.tpl'
-         });
         
         for (var i=0; i<= Math.round(Math.random()*20); i++){
          Main.loadTemplate({
@@ -27,16 +24,8 @@
             append : $('.list_host')
          });
         }
-        
-        console.log($('.card').length);
-        
-        $('.card').unbind('click').click(function(){
-          if ($(this).hasClass('active')){
-            return false;
-          }
-          $('.card.active').removeClass('active');
-          $(this).addClass('active');
-        });
+       
+        List.init();
         
       });
     </script>
