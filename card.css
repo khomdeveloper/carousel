@@ -5,6 +5,10 @@
   display:inline-block;
 }
 
+.card .body{
+ padding:10px; 
+}
+
 .cardFooter .fa-heart{
   font-size:0.7rem;
   color:rgb(224,226,215);
