@@ -21,7 +21,7 @@
 
 .card .fa-star{
   color: rgb(240,182,76);
-  font-size:0.8rem;
+  font-size:0.9rem;
 }
 
 .card .scoreStatus {
@@ -41,7 +41,7 @@
 .card .cardFooter{
   border-top:1px solid rgb(233,233,233);
   line-height:32px;
-  padding-top:5px;
+  padding-top:10px;
   padding-bottom:5px;
 }
 
@@ -78,7 +78,7 @@
 
 .card .rubl{
   font-family: 'Roboto'; 
-  font-size:0.9rem;
+  font-size:1rem;
 }
 
 .card .description{
