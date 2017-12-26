@@ -80,3 +80,9 @@
   font-family: 'Roboto'; 
   font-size:0.9rem;
 }
+
+.card .description{
+  font-size:0.9rem;
+  text-overflow:ellipsis;
+  max-height:100px;
+}
