@@ -1,6 +1,10 @@
 var Main = {
   templates : {},  
   
+  truncateString : function(s, length){
+    return s.substring(0,50); 
+  },
+  
   loadTemplate : function(input){
     
     var that = this;
