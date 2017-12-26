@@ -1,6 +1,16 @@
 .card{
   background:white;
-  border:1px solid silver;
+  border:1px solid rgb(233,233,233);
   min-width:320px;
   display:inline-block;
+}
+
+.cardFooter .fa-heart{
+  font-size:0.7rem;
+  color:rgb(224,226,215);
+}
+
+.fa-sircle{
+  color:rgb(238,238,238);
+  font-size:0.7rem;
 }
