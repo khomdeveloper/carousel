@@ -37,9 +37,11 @@
 .card .status{
   height:auto;
   width:100%;
+  clear:both;
 }
 
 .card .cardFooter{
   width:100%;
   border-top:1px solid rgb(233,233,233);
+  clear:both;
 }
