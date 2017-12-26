@@ -1,3 +1,26 @@
+var List = {
+    init : function(){
+      var that = this;
+      if ($('.list_host .card').length == 0){
+        setTimeout(function(){
+          that.init();
+        },250);
+        return false;
+      } else {
+       
+        $('.list_host .card').unbind('click').click(function(){
+          if ($(this).hasClass('active')){
+            return false;
+          }
+          $('.list_host .card.active').removeClass('active');
+          $(this).addClass('active');
+        });
+      
+      }
+    }
+};  
+
+
 var Main = {
   templates : {},  
   
