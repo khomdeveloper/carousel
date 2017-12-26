@@ -7,6 +7,10 @@
   text-align:left;
 }
 
+.card:hover{
+ border:1px solid blue; 
+}
+
 .card_body{
  padding:10px; 
 }
