@@ -2,7 +2,7 @@ var Main = {
   templates : {},  
   
   truncateString : function(s, length){
-    return s.substring(0, length); 
+    return s.substring(0, length) + '...'; 
   },
   
   loadTemplate : function(input){
