@@ -28,6 +28,8 @@
          });
         }
         
+        console.log($('.card').length);
+        
         $('.card').unbind('click').click(function(){
           if ($(this).hasClass('active')){
             return false;
