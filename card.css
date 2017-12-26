@@ -43,6 +43,7 @@
 }
 
 .card .userNameHost{
-  font-size:0.8px;
+  font-size:0.8rem;
   font-weight:bold;
+  color: rgb(187,187,187);
 }
