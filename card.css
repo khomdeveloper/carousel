@@ -5,7 +5,7 @@
   display:inline-block;
 }
 
-.card .body{
+.card_body{
  padding:10px; 
 }
 
@@ -32,4 +32,14 @@
 
 .card .scoreStatus {
   float:right; 
+}
+
+.card .status{
+  height:auto;
+  width:100%;
+}
+
+.card .cardFooter{
+  width:100%;
+  border-top:1px solid rgb(233,233,233);
 }
