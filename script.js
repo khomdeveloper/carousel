@@ -52,7 +52,7 @@ var Data = {
               username : 'user Name',
               score1 : Math.round(Math.random()*100)/10 + '',
               score2 : Math.round(Math.random()*100) + '',
-              price : Math.round(Math.round()*100) + ''
+              price : Math.round(Math.random()*100) + ''
             };
   }
   
