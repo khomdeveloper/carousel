@@ -83,7 +83,8 @@
 
 .card .description{
   font-size:0.9rem;
+  white-space:nowrap;
+  overflow:hidden;
   text-overflow:ellipsis;
   height:100px;
-  overflow:hidden;
 }
