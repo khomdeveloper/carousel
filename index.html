@@ -22,6 +22,15 @@
             append : $('.list_host')
          });
         }
+        
+        $('.card').unbind('click').click(function(){
+          if ($(this).hasClass('active'){
+              return false;
+              }
+          $('.card.active').removeClass('active');
+          $(this).addClass('active');
+        });
+        
       });
     </script>
   </body>
