@@ -167,13 +167,19 @@ var Slider = function(p) {
 			var h = [];
 			
 			var maxCount = this.getCountInScreen();
-			
+			var count = 0;
 			for (var i in this.data){
-				var record = this.data[i];
-				h.push(Main.loadTemplate({
-					url : '/carousel/card.tpl',
-            				data : record
-				}))
+				if (count <= maxCount) {
+					var record = this.data[i];
+					h.push(Main.loadTemplate({
+						url : '/carousel/card.tpl',
+						data : record
+					}));
+					count+=1;
+				} else {
+					break;
+				}
+					
 			}
 			
 			$('.slider_content',this.$).html(h.join(''));
