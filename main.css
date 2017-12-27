@@ -23,7 +23,6 @@ h1{
   width: 50px;
   height:100%;
   max-height:315px;
-  background:rgba(0,0,0,0.5);
   cursor:pointer;
   position:relative;
 }
@@ -41,7 +40,12 @@ h1{
   top:50%;
   left:0px;
   height:50%;
-  margin-top:-157px;
+  margin-top:-78px;
+  background:rgba(0,0,0,0.5);
+  line-height:157px;
+  color:white;
+  text-align:center;
+  font-size:2rem;
 }
 
 .slider_wrapper{
