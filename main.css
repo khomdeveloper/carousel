@@ -5,11 +5,34 @@ body{
 }
 
 h1{
-  font-size:1.2rem;
+  font-size:1.5rem;
   text-align:center;
 }
 
 .list_host{
   text-align:center;
   font-size:0px;
+}text-align:center;
+  font-size:0px;
+
+.list_slider{
+  
+}
+
+.slider_left_button, .slider_right_button {
+  width: 50px;
+  height:100%;
+  background:rgba(0,0,0,0.5);
+}
+
+.slider_left_button{
+  float:left; 
+}
+
+.slider_right_button{
+  float:right; 
+}
+
+.slider_content{
+  text-align:center;
 }
