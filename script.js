@@ -164,7 +164,7 @@ var Slider = function(p) {
 				html: this.host
 			})
 			
-			var h = 'test';
+			var h = [];
 			
 			for (var i in this.data){
 				var record = this.data[i];
@@ -175,7 +175,7 @@ var Slider = function(p) {
 				}))
 			}
 			
-			$('.slider_content',this.$).html(h);
+			$('.slider_content',this.$).html(h.join(''));
 		}
 
 	};
