@@ -39,6 +39,7 @@ h1{
 
 .slider_wrapper{
  border:1px solid black; 
+ height:auto;
 }
 
 .slider_content{
@@ -53,5 +54,6 @@ h1{
 .slider_container{
   position:relative;
   overflow:hidden;
+  height:50px;
   border:1px dotted black; 
 }
