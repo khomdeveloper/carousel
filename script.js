@@ -67,11 +67,26 @@ var Main = {
 
 var Data = {
  
+  getRandomIamge : function(){
+	var variants = [
+		'https://static.pexels.com/photos/162203/panthera-tigris-altaica-tiger-siberian-amurtiger-162203.jpeg',
+		'http://bm.img.com.ua/nxs/img/prikol/images/large/3/9/315193.jpg',
+		'http://www.telegraph.co.uk/content/dam/Travel/galleries/travel/activityandadventure/The-worlds-most-beautiful-mountains/mountains-Kirkjufe_3374110a.jpg',
+		'https://rccl-h.assetsadobe.com/is/image/content/dam/royal/content/fleet-landing/empress-exterior-side-aerial-day-sailing-ship.JPG?$750x400$',
+		'https://upload.wikimedia.org/wikipedia/commons/4/4e/Pleiades_large.jpg'
+		];
+	  
+	  var b = Math.round(Math.random()*5);
+	  
+	  return variants[b] ? variants[b] : variants[0];
+	  
+  },
+	
   get : function(data){
      var result = {
               description : Main.truncateString('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
                                                 80),
-              image : 'http://bm.img.com.ua/nxs/img/prikol/images/large/3/9/315193.jpg',
+              image : Data.getRandomImage(),
               username : 'user Name',
               score1 : Math.round(Math.random()*100)/10 + '',
               score2 : Math.round(Math.random()*100) + '',
