@@ -77,7 +77,7 @@
 
 .card .price_host{
   float:right;
-  color: rgb(105,157,57);
+  color: lightgreen;
   font-size:1rem;
   font-weight:bold;
   line-height:0.8rem;
@@ -90,6 +90,7 @@
 .card .rubl{
   font-family: 'Roboto'; 
   font-size:1rem;
+  margin-left:3px;
 }
 
 .card .description{
