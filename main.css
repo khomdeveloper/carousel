@@ -25,6 +25,7 @@ h1{
   max-height:315px;
   background:rgba(0,0,0,0.5);
   cursor:pointer;
+  position:relative;
 }
 
 .slider_left_button{
@@ -33,6 +34,14 @@ h1{
 
 .slider_right_button{
   float:right; 
+}
+
+.in_button{
+  position:absolute;
+  top:50%;
+  left:0px;
+  height:50%;
+  margin-top:-157px;
 }
 
 .slider_wrapper{
