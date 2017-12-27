@@ -46,6 +46,11 @@ h1{
   color:white;
   text-align:center;
   font-size:2rem;
+  width:100%;
+}
+
+.in_button .fa{
+  margin-top:60px; 
 }
 
 .slider_wrapper{
