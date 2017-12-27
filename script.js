@@ -67,7 +67,7 @@ var Main = {
 
 var Data = {
  
-  getRandomIamge : function(){
+  getRandomImage : function(){
 	var variants = [
 		'https://static.pexels.com/photos/162203/panthera-tigris-altaica-tiger-siberian-amurtiger-162203.jpeg',
 		'http://bm.img.com.ua/nxs/img/prikol/images/large/3/9/315193.jpg',
@@ -78,7 +78,7 @@ var Data = {
 	  
 	  var b = Math.round(Math.random()*5);
 	  
-	  console.log(b);
+	  //console.log(b);
 	  
 	  return variants[b] ? variants[b] : variants[0];
 	  
