@@ -12,11 +12,11 @@ h1{
 .list_host{
   text-align:center;
   font-size:0px;
-}text-align:center;
-  font-size:0px;
+}
 
 .list_slider{
-  
+  text-align:center;
+  font-size:0px;
 }
 
 .slider_left_button, .slider_right_button {
