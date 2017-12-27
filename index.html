@@ -22,19 +22,18 @@
             append : $('.list_host')
          });
         }
-       
+      
         List.init();
+      
+        var data = {};
         
-        for (var i=3; i<= Math.round(Math.random()*40); i++){
-         Main.loadTemplate({
-            url : '/carousel/card.tpl',
-            data : Data.get({id : i}),
-            append : $('.list_slider')
-         });
+        for (var i=0; i<=20; i++){
+           data[i] = Data.get({id : i});
         }
         
         Sliders.place({
-          host : $('.list_slider')
+          host : $('.list_slider'),
+          data : data
         });
         
       });
