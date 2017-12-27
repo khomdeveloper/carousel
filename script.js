@@ -166,9 +166,10 @@ var Slider = function(p) {
 			
 			var h = [];
 			
+			var maxCount = this.getCountInScreen();
+			
 			for (var i in this.data){
 				var record = this.data[i];
-				console.log(record);
 				h.push(Main.loadTemplate({
 					url : '/carousel/card.tpl',
             				data : record
@@ -179,6 +180,10 @@ var Slider = function(p) {
 		}
 
 	};
+	
+	this.getCountInScreen = function(){
+		console.log($('.slider_content').width());	
+	}	
 
 	this.set = function(p) {
 		for (var key in p) {
