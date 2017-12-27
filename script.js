@@ -93,7 +93,8 @@ var Sliders = {
 	description: {
 		id: '_required', //свойство _required
 		host: $('body'),
-		data : {}
+		data : {},
+		start : 0
 	},
 	getByID: function(id) {
 		return this.list[id]
@@ -169,12 +170,14 @@ var Slider = function(p) {
 			var maxCount = this.getCountInScreen();
 			var count = 0;
 			for (var i in this.data){
-				if (count <= maxCount) {
+				if (count <= maxCount && count >= this.startFrom) {
 					var record = this.data[i];
 					h.push(Main.loadTemplate({
 						url : '/carousel/card.tpl',
 						data : record
 					}));
+					count+=1;
+				} else if (count < this.startFrom) {	
 					count+=1;
 				} else {
 					break;
