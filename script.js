@@ -175,7 +175,7 @@ var Slider = function(p) {
 			    console.log(that.getCountInScreen());
 			});
 			
-			console.log(that.start);
+			console.log('wtf', that.start);
 			
 			$('.slider_left_button .in_button',this.$).unbind('click').click(function(){
 				console.log(that.start);
