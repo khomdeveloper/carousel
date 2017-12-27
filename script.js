@@ -78,6 +78,8 @@ var Data = {
 	  
 	  var b = Math.round(Math.random()*5);
 	  
+	  console.log(b);
+	  
 	  return variants[b] ? variants[b] : variants[0];
 	  
   },
