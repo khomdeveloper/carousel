@@ -22,7 +22,18 @@
             append : $('.list_host')
          });
         }
+       
         List.init();
+        
+        for (var i=0; i<= Math.round(Math.random()*20); i++){
+         Main.loadTemplate({
+            url : '/carousel/card.tpl',
+            data : Data.get({id : i}),
+            append : $('.list_slider')
+         });
+        }
+        
+        
       });
     </script>
   </body>
