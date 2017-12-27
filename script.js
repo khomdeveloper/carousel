@@ -177,12 +177,18 @@ var Slider = function(p) {
 			}
 			
 			$('.slider_content',this.$).html(h.join(''));
+			
+			var that = this;
+			
+			$(window).unbind('resize').resize(function(){
+			    console.log(that.getCountInScreen());
+			});
 		}
 
 	};
 	
 	this.getCountInScreen = function(){
-		console.log($('.slider_content').width());	
+		return Math.ceil($('.slider_content', this.$).width() / 244);	
 	}	
 
 	this.set = function(p) {
