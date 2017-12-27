@@ -165,9 +165,14 @@ var Slider = function(p) {
 				html: this.host
 			})
 			
-			var h = [];
+			this.output(this.start, this.start+this.getCountInScreen());
 			
-			var maxCount = this.getCountInScreen();
+			
+			/*var h = [];
+			
+			//var maxCount = this.getCountInScreen();
+			var maxCount = 100500;
+			
 			var count = 0;
 			for (var i in this.data){
 				if (count <= maxCount && count >= this.startFrom) {
@@ -185,7 +190,7 @@ var Slider = function(p) {
 					
 			}
 			
-			$('.slider_content',this.$).html(h.join(''));
+			$('.slider_content',this.$).html(h.join(''));*/
 			
 			var that = this;
 			
@@ -210,6 +215,19 @@ var Slider = function(p) {
 	this.get = function(what) {
 		return this.data[what];
 	};
+	
+	this.output = function(begin, end){
+		var h = [];
+		for (var i = begin; i <= end; i++){
+			if (this.data[i]) {
+				h.push(Main.loadTemplate({
+						url : '/carousel/card.tpl',
+						data : this.data[i]
+					}));		
+			}	
+		}
+		$('.slider_content',this.$).html(h.join(''));
+	}	
 
 	this.show = function() {
 		this.$.show();
