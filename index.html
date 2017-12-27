@@ -25,10 +25,10 @@
       
         List.init();
       
-        var data = {};
+        var data = [];
         
         for (var i=0; i<=20; i++){
-           data[i] = Data.get({id : i});
+           data.push(Data.get({id : i}));
         }
         
         Sliders.place({
