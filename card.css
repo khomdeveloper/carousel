@@ -101,7 +101,8 @@
   margin-top:10px;
 }
 
-.card img{
+.card .imag{
   height: 150px; 
   width:100%;
+  background-position:contain;
 }
