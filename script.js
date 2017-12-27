@@ -195,7 +195,7 @@ var Slider = function(p) {
 	
 	this.getCountInScreen = function(){
 		console.log($('.slider_content', this.$).width());
-		return Math.ceil($('.slider_content', this.$).width() / 250);	
+		return Math.ceil($('.slider_content', this.$).width() / 240);	
 	}	
 
 	this.set = function(p) {
