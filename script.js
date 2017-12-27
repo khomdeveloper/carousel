@@ -101,6 +101,8 @@ var Sliders = {
 	},
 	place: function(p) {
 
+		console.log(p);
+		
 		var id = p.id || Math.round(Math.random() * 10000);
 
 		if (!this.list[id]) {
