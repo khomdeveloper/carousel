@@ -87,3 +87,77 @@ var Data = {
   }
   
 }  
+
+var Sliders = {
+    list: {},
+	description: {
+		id: '_required', //свойство _required
+		host: $('body')
+	},
+	getByID: function(id) {
+		return this.list[id]
+				? this.list[id]
+				: false;
+	},
+	place: function(p) {
+
+		var id = p.id || Math.round(Math.random() * 10000);
+
+		if (!this.list[id]) {
+			p.id = id;
+			this.list[id] = new Slider(p);
+			return this.list[id];
+		} else {
+			if (!p.id) { //случай когда автоматически сгенерированное id уже существует
+				this.place(p); //once again
+				return false;
+			}
+			return this.list[id].set(p); //устанавливаем 
+		}
+
+	}
+};
+
+var Slider = function(p) {
+
+	this.place = function(p) {
+
+		for (var key in Sliders.description) {
+
+			//если объявленное обязательным поле не найдено в переданных параметрах
+			if (Sliders.description[key] === '_required' && !p[key]) {
+				console.error('"' + key + '" is required in Slider.place');
+			}
+
+			this[key] = p[key]
+					? p[key]
+					: Sliders.description[key];
+		}
+
+		//связываем с объектами
+		if (this.host) {
+			var that = this;
+            
+		}
+
+	};
+
+	this.set = function(p) {
+		for (var key in p) {
+			this.data[key] = p[key];
+		}
+	};
+
+	this.get = function(what) {
+		return this.data[what];
+	};
+
+	this.show = function() {
+		this.$.show();
+		return this;
+	};
+
+
+	this.place(p);
+
+};
