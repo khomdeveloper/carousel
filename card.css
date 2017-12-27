@@ -104,5 +104,5 @@
 .card .image{
   height: 150px; 
   width:100%;
-  background-position:contain;
+  background-size:contain;
 }
