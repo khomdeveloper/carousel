@@ -165,37 +165,22 @@ var Slider = function(p) {
 				html: this.host
 			})
 			
+			this.$ = $('.slider.id_'+this.id);
+			
 			this.output(this.start, this.start+this.getCountInScreen());
-			
-			
-			/*var h = [];
-			
-			//var maxCount = this.getCountInScreen();
-			var maxCount = 100500;
-			
-			var count = 0;
-			for (var i in this.data){
-				if (count <= maxCount && count >= this.startFrom) {
-					var record = this.data[i];
-					h.push(Main.loadTemplate({
-						url : '/carousel/card.tpl',
-						data : record
-					}));
-					count+=1;
-				} else if (count < this.startFrom) {	
-					count+=1;
-				} else {
-					break;
-				}
-					
-			}
-			
-			$('.slider_content',this.$).html(h.join(''));*/
 			
 			var that = this;
 			
 			$(window).unbind('resize').resize(function(){
 			    console.log(that.getCountInScreen());
+			});
+			
+			$('.slider_left_button .in_button',this.$).unbind('click').click(function(){
+				this.start = Math.max(0,this.start-1);
+			});
+			
+			$('.slider_right_button .in_button',this.$).unbind('click').click(function(){
+				this.start = Math.min(this.start+1, this.data.length - this.getCountInScreen()); 
 			});
 		}
 
