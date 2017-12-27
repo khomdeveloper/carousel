@@ -188,7 +188,7 @@ var Slider = function(p) {
 	};
 	
 	this.getCountInScreen = function(){
-		return Math.ceil($('.slider_content', this.$).width() / 244);	
+		return Math.ceil($('.slider_content', this.$).width() / 244) - 1;	
 	}	
 
 	this.set = function(p) {
