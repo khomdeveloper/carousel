@@ -36,3 +36,22 @@ h1{
 .slider_content{
   text-align:center;
 }
+
+.slider_wrapper{
+ border:1px solid black; 
+}
+
+.slider_content{
+  border:1px solid silver;
+  height:100px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:500px;
+}
+
+.slider_container{
+  position:relative;
+  overflow:hidden;
+  border:1px dotted black; 
+}
