@@ -174,17 +174,15 @@ var Slider = function(p) {
 			$(window).unbind('resize').resize(function(){
 			    console.log(that.getCountInScreen());
 			});
-			
-			console.log('wtf', that.start);
-			
-			$('.slider_left_button .in_button',this.$).unbind('click').click(function(){
-				console.log(that.start);
+		
+			$('.slider_left_button .in_button',this.$).unbind('click').click(function(){	
 				that.start = Math.max(0,that.start-1);
+				that.output(that.start, that.start+that.getCountInScreen())
 			});
 			
 			$('.slider_right_button .in_button',this.$).unbind('click').click(function(){
-				console.log(that.start);
 				that.start = Math.min(that.start+1, that.data.length - that.getCountInScreen()); 
+				that.output(that.start, that.start+that.getCountInScreen())
 			});
 		}
 
