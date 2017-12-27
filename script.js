@@ -176,12 +176,13 @@ var Slider = function(p) {
 			});
 			
 			$('.slider_left_button .in_button',this.$).unbind('click').click(function(){
-				console.log(this.start);
-				this.start = Math.max(0,this.start-1);
+				console.log(that.start);
+				that.start = Math.max(0,that.start-1);
 			});
 			
 			$('.slider_right_button .in_button',this.$).unbind('click').click(function(){
-				this.start = Math.min(this.start+1, this.data.length - this.getCountInScreen()); 
+				console.log(that.start);
+				that.start = Math.min(that.start+1, that.data.length - that.getCountInScreen()); 
 			});
 		}
 
