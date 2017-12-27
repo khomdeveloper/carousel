@@ -172,7 +172,7 @@ var Slider = function(p) {
 			var that = this;
 			
 			$(window).unbind('resize').resize(function(){
-			    console.log(that.getCountInScreen());
+			    that.output(that.start, that.start+that.getCountInScreen())
 			});
 		
 			$('.slider_left_button .in_button',this.$).unbind('click').click(function(){	
