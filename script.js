@@ -122,6 +122,19 @@ var Sliders = {
 var Slider = function(p) {
 
 	this.place = function(p) {
+		
+		//загружаем шаблон карточки и если он не загружен ждем 100 мс и пытаемся снова
+		if (!Main.loadTemplate({
+			url : '/carousel/card.tpl'
+		}) || !Main.loadTemplate({
+			url : '/carousel/slider.tpl'
+		}) ) {
+			setTimeout(function(){
+				this.place(p);
+			}, 100);
+			return false;	
+		};
+		
 
 		for (var key in Sliders.description) {
 
@@ -135,9 +148,20 @@ var Slider = function(p) {
 					: Sliders.description[key];
 		}
 
-		//связываем с объектами
+		//вставляем в DOM
 		if (this.host) {
-			this.$ = $('<div class="slider id_' + this.id + '"><div class="slider_left_button"></div><div class="slider_wrapper"><div class="slider_container"></div></div><div class="slider_right_button"></div></div>').appendTo(this.host);			
+			
+			Main.loadTemplate({
+				url : '/carousel/slider.tpl',
+				data : {
+					id : this.id
+				},
+				html: this.host
+			})
+			
+			var h = 'test';
+			
+			$('.slider_content',this.$).html(h);
 		}
 
 	};
