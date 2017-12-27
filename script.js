@@ -175,6 +175,8 @@ var Slider = function(p) {
 			    console.log(that.getCountInScreen());
 			});
 			
+			console.log(that.start);
+			
 			$('.slider_left_button .in_button',this.$).unbind('click').click(function(){
 				console.log(that.start);
 				that.start = Math.max(0,that.start-1);
