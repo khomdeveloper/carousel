@@ -92,7 +92,8 @@ var Sliders = {
     list: {},
 	description: {
 		id: '_required', //свойство _required
-		host: $('body')
+		host: $('body'),
+		data : {}
 	},
 	getByID: function(id) {
 		return this.list[id]
@@ -100,8 +101,6 @@ var Sliders = {
 				: false;
 	},
 	place: function(p) {
-
-		console.log(p);
 		
 		var id = p.id || Math.round(Math.random() * 10000);
 
@@ -139,7 +138,7 @@ var Slider = function(p) {
 		//связываем с объектами
 		if (this.host) {
 			var that = this;
-            
+			this.$ = $('<div class="slider id_' + p.id + '"><div class="slider_left_button"></div><div class="slider_content"></div><div class="slider_right_button"></div></div>').appendTo(host);			
 		}
 
 	};
