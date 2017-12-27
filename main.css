@@ -22,7 +22,7 @@ h1{
 .slider_left_button, .slider_right_button {
   width: 50px;
   height:100%;
-  max-height:300px;
+  max-height:315px;
   background:rgba(0,0,0,0.5);
   cursor:pointer;
 }
@@ -35,10 +35,6 @@ h1{
   float:right; 
 }
 
-.slider_content{
-  text-align:center;
-}
-
 .slider_wrapper{
  border:1px solid black; 
  height:auto;
@@ -46,20 +42,21 @@ h1{
 
 .slider_content{
   border:1px solid silver;
-  height:300px;
+  height:315px;
   position:absolute;
   left:0px;
   top:0px;
-  width:2048px;
+  text-align:center;
+  width:100%;
 }
 
 .slider_container{
   position:relative;
   overflow:hidden;
-  height:300px;
+  height:315px;
   border:1px dotted black; 
 }
 
 .slider{
-  height:auto; 
+  height:315px; 
 }
