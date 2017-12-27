@@ -166,6 +166,15 @@ var Slider = function(p) {
 			
 			var h = 'test';
 			
+			for (var i in this.data){
+				var record = data[i];
+				console.log(record);
+				h.push(Main.loadTemplate({
+					url : '/carousel/card.tpl',
+            				data : record
+				}))
+			}
+			
 			$('.slider_content',this.$).html(h);
 		}
 
