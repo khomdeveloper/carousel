@@ -94,7 +94,7 @@ var Sliders = {
 		id: '_required', //свойство _required
 		host: $('body'),
 		data : {},
-		start : 0
+		start : 5
 	},
 	getByID: function(id) {
 		return this.list[id]
@@ -218,7 +218,7 @@ var Slider = function(p) {
 	
 	this.output = function(begin, end){
 		var h = [];
-		for (var i = begin; i <= end; i++){
+		for (var i = begin; i < end; i++){
 			if (this.data[i]) {
 				h.push(Main.loadTemplate({
 						url : '/carousel/card.tpl',
