@@ -129,8 +129,13 @@ var Slider = function(p) {
 		}) || !Main.loadTemplate({
 			url : '/carousel/slider.tpl'
 		}) ) {
-			setTimeout(function(){
-				this.place(p);
+			var that = this;
+			if (that.timer){
+				clearTimeout(that.timer);
+				that.timer = false;
+			}
+			that.timer = setTimeout(function(){
+				that.place(p);
 			}, 100);
 			return false;	
 		};
