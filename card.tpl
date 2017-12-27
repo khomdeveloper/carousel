@@ -1,6 +1,6 @@
 <div class="card id_{{id}}">
   <div class="card_body">
-    <div class="image" style="bacground-image:url('{{image}}');"></div>
+    <div class="image" style="background-image:url('{{image}}');"></div>
     <div class="description">{{description}}</div>
     <div class="status">
       <div class="scoreStatus">
