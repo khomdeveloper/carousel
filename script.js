@@ -111,7 +111,7 @@ var Sliders = {
 		id: '_required', //свойство _required
 		host: $('body'),
 		data : {},
-		start : 5
+		start : 0
 	},
 	getByID: function(id) {
 		return this.list[id]
