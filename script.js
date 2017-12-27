@@ -137,7 +137,7 @@ var Slider = function(p) {
 
 		//связываем с объектами
 		if (this.host) {
-			this.$ = $('<div class="slider id_' + this.id + '"><div class="slider_left_button"></div><div class="slider_content"></div><div class="slider_right_button"></div></div>').appendTo(this.host);			
+			this.$ = $('<div class="slider id_' + this.id + '"><div class="slider_left_button"></div><div class="slider_wrapper"><div class="slider_container"></div></div><div class="slider_right_button"></div></div>').appendTo(this.host);			
 		}
 
 	};
