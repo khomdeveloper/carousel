@@ -176,6 +176,7 @@ var Slider = function(p) {
 			});
 			
 			$('.slider_left_button .in_button',this.$).unbind('click').click(function(){
+				console.log(this.start);
 				this.start = Math.max(0,this.start-1);
 			});
 			
